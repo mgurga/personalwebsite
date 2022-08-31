@@ -1,0 +1,60 @@
+#root, html {
+  background-color: black;
+  color: white;
+}
+
+.subtext {
+  font-style: normal;
+  color: lightgrey;
+  margin: 0;
+  font-size: 15pt;
+}
+
+.BlockButton {
+  border: 5px solid white;
+  width: fit-content;
+  margin: 0;
+  display: inline-block;
+}
+
+.BlockButton > h3, a {
+  margin: 0;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.BlockButton:hover {
+  animation-name: BlockButtonHover;
+  animation-duration: 1s;
+  background-color: white;
+}
+
+.BlockButton:hover > h3 {
+  color: black;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+html, body, .App {
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes BlockButtonHover {
+  from {
+    background-color: black;
+    color: white;
+  }
+
+  to {
+    background-color: white;
+    color: black;
+  }
+}
