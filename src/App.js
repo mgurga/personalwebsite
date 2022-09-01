@@ -6,10 +6,10 @@ function App() {
   return (
     <div>
       <AnimatedFavicon />
-      <div style={{maxWidth: "49.5%", display: "inline-block", verticalAlign: "top", padding: "10px", whiteSpace: "normal"}}>
+      <div style={{maxWidth: "45%", display: "inline-block", verticalAlign: "top", padding: "10px", whiteSpace: "normal"}}>
         <h1 style={{fontSize: "50pt"}}>Moti Urga</h1>
         <p className='subtext'>
-          Hello, I am an {Math.round((new Date() - new Date("08/17/2004")) / (1000*60*60*24) / 365)} year old programmer / network engineer / IT guy 
+          Hello, I am an {((new Date() - new Date("08/17/2004")) / (1000*60*60*24) / 365).toFixed(5)} year old programmer / network engineer / IT guy 
           currently studying Computer Science at the University of California Riverside.</p>
         <br />
         <h1>Contact Me</h1>
@@ -23,22 +23,36 @@ function App() {
         <h1>Projects</h1>
         <p className='subtext'>All of my projects are on Github but here are some highlights.</p>
         <h2>RepMap</h2>
+        <LanguageTag lang="Java" color="coral" />
+        <LanguageTag lang="Python" color="darkcyan" />
+        <LanguageTag lang="Flask" color="darkcyan" />
         <p className='subtext' style={{marginBottom: "5px"}}>An Android app built by me and 
         Bryan Hildebrand which tells a user their current representatives after clicking their position on a map.</p>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/RepMap"} alt={"RepMap Source Code"}/>
+        <br />
         <h2>graphy</h2>
+        <LanguageTag lang="C++" color="hotpink" />
+        <LanguageTag lang="Redis" color="orangered" />
         <p className='subtext' style={{marginBottom: "5px"}}>Simple, hackable, and (reasonably) fast Redis server implementation in C++ 11. 
         This server implementation is mostly compatible with Redis v1.0.0, uses zero dependencies, and is unit tested with googletest.</p>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/graphy"} alt={"graphy Source Code"}/>
+        <br />
         <h2>Jitter</h2>
-        <p className='subtext' style={{marginBottom: "5px"}}>A web frontend and scraper for Twitter written in Java 11 using Spring and Thymeleaf. 
+        <LanguageTag lang="Java" color="coral" />
+        <LanguageTag lang="Spring" color="coral" />
+        <LanguageTag lang="Thymeleaf" color="coral" />
+        <p className='subtext' style={{marginBottom: "5px"}}>A web frontend and scraper for Twitter written in Java 11. 
         This program contains a Twitter scraper that gets the official website and retrieves relevant information from its structure.</p>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/jitter"} alt={"jitter Source Code"}/>
+        <br />
         <h2>multiconway</h2>
-        <p className='subtext' style={{marginBottom: "5px"}}>A multiplayer version of conways game of life with a theoretically infinite board. 
-        Built in Python using Flask and SocketIO.</p>
+        <LanguageTag lang="Python" color="darkcyan" />
+        <LanguageTag lang="Flask" color="darkcyan" />
+        <LanguageTag lang="Socket IO" color="grey" />
+        <p className='subtext' style={{marginBottom: "5px"}}>A multiplayer version of conways game of life with a theoretically infinite board.
+        (requires an unimaginable about of CPU power)</p>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/multiconway"} alt={"multiconway Source Code"} />
-        <BlockButton name={"Online Demo"} url={"https://mgur.ga/multiconway"} alt={"multiconway online demo"} />
+        <BlockButton name={"Online Demo"} url={"https://mgur.ga/multiconway"} alt={"multiconway Online Demo"} />
         <br />
         <br />
         <br />
@@ -49,6 +63,12 @@ function App() {
       </footer>
     </div>
   );
+}
+
+const LanguageTag = (props) => {
+  return <div style={{border: `2px solid ${props.color}`, display: "inline-block", margin: "0 3px 0 3px"}}>
+    <p style={{color: props.color, margin: "0 2px 0 2px", fontSize: "10pt"}}>{props.lang}</p>
+  </div>;
 }
 
 const BlockButton = (props) => {
