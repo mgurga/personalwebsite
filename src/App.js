@@ -1,11 +1,11 @@
 import './App.css';
-import { useEffect, useRef } from 'react';
-import Globe from 'react-globe.gl';
-import { SizeMe } from 'react-sizeme';
+import World from './World.js'
+import AnimatedFavicon from './AnimatedFavicon';
 
 function App() {
   return (
     <div>
+      <AnimatedFavicon />
       <div style={{maxWidth: "49.5%", display: "inline-block", verticalAlign: "top", padding: "10px", whiteSpace: "normal"}}>
         <h1 style={{fontSize: "50pt"}}>Moti Urga</h1>
         <p className='subtext'>
@@ -51,30 +51,5 @@ const BlockButton = (props) => {
     <h3>{props.name}</h3>
   </div></a>;
 }
-
-const World = () => {
-  const globeEl = useRef();
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (globeEl.current !== undefined) {
-        globeEl.current.controls().enableZoom = false;
-        globeEl.current.controls().autoRotateSpeed = 1;
-        globeEl.current.controls().autoRotate = true;
-      }
-    }, 100)
-  }, []);
-
-  return <div style={{width: "49%", display: "inline-block", float: "right"}}>
-    <SizeMe>{({ size: { width } }) => (
-      <Globe
-        ref={globeEl}
-        width={width}
-        height={width}
-        backgroundColor="rgb(0,0,0)"
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
-      />
-  )}</SizeMe></div>;
-};
 
 export default App;
