@@ -15,7 +15,7 @@ const World = () => {
     }, 100)
   }, []);
 
-  return <div style={{ width: "49%", display: "inline-block", float: "right" }}>
+  return <div style={{ width: "49%", display: "inline-block", float: "right", position: "fixed"}}>
     <SizeMe>{({ size: { width } }) => (
       <Globe
         ref={globeEl}

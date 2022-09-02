@@ -22,19 +22,41 @@ function App() {
         <br />
         <h1>Projects</h1>
         <p className='subtext'>All of my projects are on Github but here are some highlights.</p>
-        <h2>RepMap</h2>
-        <LanguageTag lang="Java" color="coral" />
+        <h2>HiLo</h2>
+        <LanguageTag lang="Svelte" color="darkred" />
+        <LanguageTag lang="Typescript" color="lightblue" />
+        <LanguageTag lang="SCSS" color="mediumpurple" />
         <LanguageTag lang="Python" color="darkcyan" />
         <LanguageTag lang="Flask" color="darkcyan" />
-        <p className='subtext' style={{marginBottom: "5px"}}>An Android app built by me and 
-        Bryan Hildebrand which tells a user their current representatives after clicking their position on a map.</p>
+        <p className='subtext' style={{marginBottom: "5px"}}>Create and play higher or lower games. 
+        Compete for the highest streak or assemble large and detailed games.</p>
+        <BlockButton name={"Online Demo"} url={"https://mgur.ga/hilo"} alt={"hilo Online Demo"}/>
+        <BlockButton name={"Source Code"} url={"https://github.com/mgurga/hilo"} alt={"hilo Source Code"}/>
+        <br />
+        <h2>RepMap</h2>
+        <LanguageTag lang="Java" color="coral" />
+        <LanguageTag lang="Android" color="coral" />
+        <LanguageTag lang="Python" color="darkcyan" />
+        <LanguageTag lang="Flask" color="darkcyan" />
+        <p className='subtext' style={{marginBottom: "5px"}}>An Android app built by me and Bryan Hildebrand 
+        which tells a user their current representatives after clicking their position on a map. Earned us 2nd place
+        in a district-wide programming competition.</p>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/RepMap"} alt={"RepMap Source Code"}/>
+        <br />
+        <h2>multiconway</h2>
+        <LanguageTag lang="Python" color="darkcyan" />
+        <LanguageTag lang="Flask" color="darkcyan" />
+        <LanguageTag lang="Socket IO" color="grey" />
+        <p className='subtext' style={{marginBottom: "5px"}}>A multiplayer version of conways game of life with a theoretically infinite board.
+        (requires an unimaginable about of CPU power)</p>
+        <BlockButton name={"Online Demo"} url={"https://mgur.ga/multiconway"} alt={"multiconway Online Demo"} />
+        <BlockButton name={"Source Code"} url={"https://github.com/mgurga/multiconway"} alt={"multiconway Source Code"} />
         <br />
         <h2>graphy</h2>
         <LanguageTag lang="C++" color="hotpink" />
         <LanguageTag lang="Redis" color="orangered" />
         <p className='subtext' style={{marginBottom: "5px"}}>Simple, hackable, and (reasonably) fast Redis server implementation in C++ 11. 
-        This server implementation is mostly compatible with Redis v1.0.0, uses zero dependencies, and is unit tested with googletest.</p>
+        This implementation is mostly compatible with Redis v1.0.0, uses zero dependencies, and is unit tested.</p>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/graphy"} alt={"graphy Source Code"}/>
         <br />
         <h2>Jitter</h2>
@@ -44,15 +66,6 @@ function App() {
         <p className='subtext' style={{marginBottom: "5px"}}>A web frontend and scraper for Twitter written in Java 11. 
         This program contains a Twitter scraper that gets the official website and retrieves relevant information from its structure.</p>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/jitter"} alt={"jitter Source Code"}/>
-        <br />
-        <h2>multiconway</h2>
-        <LanguageTag lang="Python" color="darkcyan" />
-        <LanguageTag lang="Flask" color="darkcyan" />
-        <LanguageTag lang="Socket IO" color="grey" />
-        <p className='subtext' style={{marginBottom: "5px"}}>A multiplayer version of conways game of life with a theoretically infinite board.
-        (requires an unimaginable about of CPU power)</p>
-        <BlockButton name={"Source Code"} url={"https://github.com/mgurga/multiconway"} alt={"multiconway Source Code"} />
-        <BlockButton name={"Online Demo"} url={"https://mgur.ga/multiconway"} alt={"multiconway Online Demo"} />
         <br />
         <br />
         <br />
