@@ -30,7 +30,7 @@ function App() {
         <LanguageTag lang="Flask" color="darkcyan" />
         <p className='subtext' style={{marginBottom: "5px"}}>Create and play higher or lower games. 
         Compete for the highest streak or assemble large and detailed games.</p>
-        <BlockButton name={"Online Demo"} url={"https://mgur.ga/hilo/"} alt={"hilo Online Demo"}/>
+        <BlockButton name={"Online Demo"} url={"https://mgurga.xyz/hilo"} alt={"hilo Online Demo"}/>
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/hilo"} alt={"hilo Source Code"}/>
         <br />
         <h2>RepMap</h2>
@@ -49,7 +49,7 @@ function App() {
         <LanguageTag lang="Socket IO" color="grey" />
         <p className='subtext' style={{marginBottom: "5px"}}>A multiplayer version of conways game of life with a theoretically infinite board.
         (requires an unimaginable about of CPU power)</p>
-        <BlockButton name={"Online Demo"} url={"https://mgur.ga/multiconway"} alt={"multiconway Online Demo"} />
+        <BlockButton name={"Online Demo"} url={"https://mgurga.xyz/multiconway"} alt={"multiconway Online Demo"} />
         <BlockButton name={"Source Code"} url={"https://github.com/mgurga/multiconway"} alt={"multiconway Source Code"} />
         <br />
         <h2>graphy</h2>
