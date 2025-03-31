@@ -1,8 +1,12 @@
 import { Hono } from "jsr:@hono/hono";
+import { serveStatic } from 'jsr:@hono/hono/deno'
 import { jsxRenderer } from 'jsr:@hono/hono/jsx-renderer'
 import { AsciiApp } from "./ascii/ascii.tsx";
 
 const app = new Hono();
+
+app.use('/static/script.js', serveStatic({ path: './src/ascii/script.js' }))
+app.use('/static/styles.css', serveStatic({ path: './src/ascii/styles.css' }))
 
 app.get('/', jsxRenderer(({ children }) => {
     return (
@@ -13,7 +17,7 @@ app.get('/', jsxRenderer(({ children }) => {
                 <meta name="theme-color" content="#000000" />
                 <meta
                     name="mgurga"
-                    content="information about the California born programmer"
+                    content="Information about the California born programmer"
                 />
                 <link rel="apple-touch-icon" href="/logo512.png" />
                 <link rel="manifest" href="/manifest.json" />
