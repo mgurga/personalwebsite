@@ -51,7 +51,7 @@ Science at the University of California Riverside.
 Send me an email: <u>motiurga AT gmail DOT com</u> <br />
 View all my projects on GitHub: <a target="_blank" href="https://github.com/mgurga">github.com/mgurga</a>
 
-<br /> <br />
+<br /> <br /> <br />
 
 Here are some of my favorite projects:
 
@@ -88,6 +88,24 @@ RepMap was a collaborative submission to the Congressional App Contest that make
 your representative. The Android app displays an interactive OpenStreetMap display of the United States <br />
 and the API converts the coordinates to zipcodes to districts. This data is formatted into an ordered <br />
 list on the app. Our submission earned us 2nd place in our district. <br />
+
+<br /> <br />
+
+I have also contributed to a number of open source projects: <br /> <br />
+
+<a target="_blank" href="https://github.com/QuantumBadger/RedReader">RedReader</a> - An unofficial open source Android app for Reddit. <br />
+ • Added avatar image to the User Profile dialog. <a target="_blank" href="https://github.com/QuantumBadger/RedReader/pull/1029">pr</a> <br />
+ • Added prefrence to open post from post title. <a target="_blank" href="https://github.com/QuantumBadger/RedReader/pull/854">pr</a> <br />
+
+<br />
+
+<a target="_blank" href="https://github.com/JLErvin/berry">berry</a> - 🍓 A healthy, byte-sized window manager <br />
+ • Improve multimonitor support when fullscreening windows. <a target="_blank" href="https://github.com/JLErvin/berry/pull/139">pr</a> <br />
+
+<br />
+
+<a target="_blank" href="https://github.com/Owl-dy/autozoom">autozoom</a> - A Python script to let you join Zoom meetings at the scheduled times. <br />
+ • Added linux support and support for recurring events. <a target="_blank" href="https://github.com/Owl-dy/autozoom/pull/6">pr</a> <br />
 
 <br /> <br />
 Thanks for reading :) <br />
