@@ -31,7 +31,7 @@ export function AsciiApp() {
     <div>
         <noscript id="rawdata">
             <pre>
- __   __  _______  _______  ___       __   __  ______    _______  _______  <br />
+ __   __  _______  _______  ___       __   __  ______    _______  _______  <br />
 |  |_|  ||       ||       ||   |     |  | |  ||    _ |  |       ||   _   | <br />
 |       ||   _   ||_     _||   |     |  | |  ||   | ||  |    ___||  |_|  | <br />
 |       ||  | |  |  |   |  |   |     |  |_|  ||   |_||_ |   | __ |       | <br />
@@ -45,6 +45,29 @@ export function AsciiApp() {
 Hello, I am a {age()} year old programmer / network engineer / IT guy currently studying Computer 
 <br />
 Science at the University of California Riverside.
+
+<br /> <br />
+
+Fond of: 
+<a target="_blank" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>, 
+Electronic Music, 
+<a target="_blank" href="https://maps.google.com/">Maps</a>, 
+Email, 
+Cats, 
+Fashion, 
+Tea, 
+Trains, 
+<a target="_blank" href="https://en.wikipedia.org/wiki/Mojave_Desert">Mojave Desert</a>, 
+and <a target="_blank" href="https://en.wikipedia.org/wiki/Trackball">Ball Mice</a>
+
+<br />
+
+Not fond of: 
+Turkey Legs, 
+Handshakes, 
+<a target="_blank" href="https://www.cherry.de/en-gb/product/mx2a-blue">Loud Keyboards</a>, 
+Carbonated Drinks, 
+and Headphones
 
 <br /> <br />
 
