@@ -7,4 +7,8 @@ const app = new Hono()
 app.route('/', AppWrapper)
 app.use('*', serveStatic({ root: './public' }))
 
-Deno.serve({ port: Number(Deno.args[0]) }, app.fetch);
+if (Deno.args.length == 0) {
+    Deno.serve({ port: 8000 }, app.fetch);
+} else {
+    Deno.serve({ port: Number(Deno.args[0]) }, app.fetch);
+}
