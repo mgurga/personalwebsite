@@ -1,4 +1,5 @@
 import { raw } from 'jsr:@hono/hono/html'
+import { HitCounter } from "../HitCounter.tsx"
 
 function rand(min: number, max: number) {
     const minCeiled = Math.ceil(min);
@@ -132,7 +133,6 @@ I have also contributed to a number of open source projects: <br /> <br />
 
 <br /> <br />
 Thanks for reading :) <br />
-<br /> <br />
 
 <a href="#" onclick="return replay()">[ Replay animation ]</a> <br />
 
@@ -140,6 +140,15 @@ Thanks for reading :) <br />
         </noscript>
 
         <div id="out"></div>
+
+        <br />
+        <br />
+
+        <footer style="margin:auto; text-align: center; width: fit-content; position: relative;">
+            <pre>Hit Counter</pre>
+            <br />
+            <HitCounter />
+        </footer>
 
         {raw`
         <script src="/static/script.js"></script>
